@@ -16,24 +16,59 @@ html {
   box-sizing: inherit;
 }
 
-.bear{
+.bear {
   width: 1000px;
 }
 
-#left-ear{
-  transform-origin: 100px 82px;
+#left-ear {
   transition: all .2s linear;
 }
 
-#right-ear{
-  transform-origin: 100px 82px;
+#right-ear {
   transition: all .2s linear;
 }
 
-.bear:hover #left-ear{
-  transform: translate(0px,-10px);
+.bear:hover #left-ear {
+  transform: translate(0, -10px);
 }
 
-.bear:hover #right-ear{
-  transform: translate(0px,-10px);
+.bear:hover #right-ear {
+  transform: translate(0, -10px);
+}
+
+#left-eye {
+  animation: slide 1.5s linear alternate infinite;
+}
+
+#right-eye {
+  animation: slide 1.5s linear alternate infinite;
+}
+
+@keyframes slide {
+
+  0% { transform: translate(0, 0); }
+
+  100% { transform: translate(10px, 0); }
+
+}
+
+.st0 {
+  fill: #673200;
+}
+
+.st1 {
+  fill: #ffaaca;
+}
+
+.st2 {
+  fill: #c65b00;
+}
+
+.st3 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
 }
