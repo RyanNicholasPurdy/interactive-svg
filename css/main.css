@@ -15,3 +15,25 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.bear{
+  width: 1000px;
+}
+
+#left-ear{
+  transform-origin: 100px 82px;
+  transition: all .2s linear;
+}
+
+#right-ear{
+  transform-origin: 100px 82px;
+  transition: all .2s linear;
+}
+
+.bear:hover #left-ear{
+  transform: translate(0px,-10px);
+}
+
+.bear:hover #right-ear-ear{
+  transform: translate(0px,-10px);
+}
